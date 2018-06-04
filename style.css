@@ -1,0 +1,176 @@
+
+* {
+  background: linear-gradient(#FFFFE7, 	#A67F59);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  /* display: flex; */
+
+}
+
+
+.grid-container{
+  display: flex;
+  margin: 40px;
+
+}
+
+.grid {
+
+  border: 1px solid black;
+  display: flex;
+  /* i might choose "space-evenly" */
+  justify-content:space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  flex: 1;
+  /* align-items: flex-start; */
+}
+
+
+
+.item {
+  border: 10px solid green;
+  width: 500px;
+  height: 400px;
+  padding: 1px;
+  display: flex;
+  margin-bottom: 10px;
+  /* margin-top: auto */
+}
+
+
+
+
+/* box one */
+.one {
+
+  border: 10px solid white;
+  width: 30%;
+  height: 30%;
+  font-family: 'Supermercado One', cursive;
+  font-size: x-large;
+  flex-direction: column;
+  /* justify-content: center; */
+
+}
+.one img {
+  flex:1;
+}
+.one p {
+  flex:1;
+  color: #3C3731;
+  background:#F8F3F0 no-repeat fixed;
+}
+
+.one section{
+    flex:1;
+    color: #F8F3F0;
+    background:#3C3731 no-repeat fixed;
+}
+
+
+
+.three {
+  border: 10px solid white;
+  width: 30%;
+  display: flex;
+  height: 70%;
+}
+
+
+.three p{
+  font-family: 'Supermercado One', cursive;
+  font-size: x-large;
+  color: #F8F3F0;
+  background:#3C3731 no-repeat fixed;
+  flex: 1;
+
+}
+
+
+
+.four{
+  width: 30%;
+  height: 70%;
+  font-family: 'Supermercado One', cursive;
+  font-size: x-large;
+  flex-direction: column;
+  border: 10px solid white;
+  display: flex;
+
+}
+
+
+.four div, .four p {
+  flex:1;
+  color: #3C3731;
+  background:#F8F3F0 no-repeat fixed;
+}
+
+.five {
+  width: 30%;
+  height: 70%;
+  font-family: 'Supermercado One', cursive;
+  font-size: x-large;
+  flex-direction: column;
+  border: 10px solid white;
+  display: flex;
+
+
+
+}
+
+.five img{
+  flex:1;
+}
+.five p{
+  flex:1;
+  color: #3C3731;
+  background:#F8F3F0 no-repeat fixed;
+}
+  }
+
+
+  .six {
+    width: 30%;
+    height: 30%;
+    font-family: 'Supermercado One', cursive;
+    font-size: x-large;
+    flex-direction: column;
+    border: 10px solid white;
+    display: flex;
+
+  }
+
+  .six p {
+    flex:1;
+    color: #3C3731;
+    background:#F8F3F0 no-repeat fixed;
+    font-family: 'Supermercado One', cursive;
+    font-size: x-large;
+    flex-direction: column;
+    border: 10px solid white;
+  }
+    }
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+/* header */
+/* title */
+/* article */
+/* footer */
+
+/* events */
+
+* {
+  display: flex;
+}
+
+}
