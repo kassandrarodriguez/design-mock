@@ -11,7 +11,7 @@
 
 .container{
   margin:100px;
-  display: flex;
+  display: block;
   border: 1px solid black;
   flex-direction: row;
   flex-wrap: wrap;
@@ -145,6 +145,7 @@ img {
 }
 
 /*small phone, iPhone 5 and up */
+
 @media only screen and (min-width: 320px){
   .container{
     display: block;
@@ -155,13 +156,14 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1; */
-    height: auto;
+    height: 100vh;
+    width: 100vw;
   }
   .column-one{
     border: 1px solid green;
-    display: block;
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    /* height: 100vh;
+    width: 100vw; */
     /* flex:1;
     flex-direction: column;
     font-family: 'Supermercado One', cursive; */
@@ -170,29 +172,34 @@ img {
     width: auto;
   }
 
-    .column-two{
-      border: 1px solid red;
-      display: block;
-      flex:1;
-      flex-direction: column;
-      font-family: 'Supermercado One', cursive;
-      height: 100vh;
-      width: 100vw;
+  .column-two{
+    border: 1px solid red;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    font-family: 'Supermercado One', cursive;
+    /* height: 100vh;
+    width: 100vw; */
     }
-    .column-three{
-      border: 1px solid purple;
-      display: flex;
-      flex:1;
-      flex-direction: column;
-      font-family: 'Supermercado One', cursive;
-      height: 100vh;
-      width: 100vw;
+  .column-three{
+    border: 1px solid purple;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    font-family: 'Supermercado One', cursive;
+    height: 100vh;
+    width: 100vw;
     }
-  /* Small devices (tablets, 768px and up) */
-  @media only screen and (min-width: 768px){
+  }
+
+  @media only screen
+and (min-device-width : 768px)
+/* and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  */{
 
     .container{
-      /* display: flex; */
+      display: flex;
       margin:10px;
       width: 100%;
       /* display: flex;
@@ -200,19 +207,27 @@ img {
       flex-direction: row;
       flex-wrap: wrap;
       flex: 1; */
-      /* height: auto; */
+      height: 100vh;
+      width: 100vw;
+    }
+  }
 
-/*
-@media only screen and (min-width: 768px) { */
-/* header */
-/* title */
-/* article */
-/* footer */
+  @media screen
+  and (min-device-width: 1200px)
+  /* and (max-device-width: 1600px) */
+  /* and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { */
 
-/* events */
-
-/* * {
-  display: flex;
-}
-
-} */
+    .container{
+      display: flex;
+      margin:10px;
+      width: 100%;
+      /* display: flex;
+      border: 1px solid black;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex: 1; */
+      height: 100vh;
+      width: 100vw;
+    }
+    }
