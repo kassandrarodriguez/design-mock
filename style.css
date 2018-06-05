@@ -12,11 +12,12 @@
 .container{
   margin:100px;
   display: flex;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1;
   height: 100vh;
+  width: 100vw;
 }
 
 .column-one, .column-two, .column-three {
@@ -25,12 +26,12 @@
   flex:1;
   flex-direction: column;
   font-family: 'Supermercado One', cursive;
-  font-size: x-large;
+  /* font-size: x-large; */
 
 }
   .one-row-one {
   border: 5px solid white;
-  width:auto;
+  /* width:auto; */
   height: 35%;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -38,7 +39,7 @@
 
   .one-row-two {
     border: 5px solid white;
-    width:auto;
+    /* width:auto; */
     height: 65%;
     margin-right: 20px;
 }
@@ -143,11 +144,63 @@ img {
 
 }
 
+/*small phone, iPhone 5 and up */
+@media only screen and (min-width: 320px){
+  .container{
+    display: block;
+    margin:10px;
+    width: 100%;
+    /* display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1; */
+    height: auto;
+  }
+  .column-one{
+    border: 1px solid green;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    /* flex:1;
+    flex-direction: column;
+    font-family: 'Supermercado One', cursive; */
+  }
+  .maximus_face{
+    width: auto;
+  }
 
+    .column-two{
+      border: 1px solid red;
+      display: block;
+      flex:1;
+      flex-direction: column;
+      font-family: 'Supermercado One', cursive;
+      height: 100vh;
+      width: 100vw;
+    }
+    .column-three{
+      border: 1px solid purple;
+      display: flex;
+      flex:1;
+      flex-direction: column;
+      font-family: 'Supermercado One', cursive;
+      height: 100vh;
+      width: 100vw;
+    }
+  /* Small devices (tablets, 768px and up) */
+  @media only screen and (min-width: 768px){
 
-
-
-
+    .container{
+      /* display: flex; */
+      margin:10px;
+      width: 100%;
+      /* display: flex;
+      border: 1px solid black;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex: 1; */
+      /* height: auto; */
 
 /*
 @media only screen and (min-width: 768px) { */
