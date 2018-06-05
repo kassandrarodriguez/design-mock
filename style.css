@@ -6,57 +6,85 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
-  /* display: flex; */
 
 }
 
-
-.grid-container{
+.container{
+  margin:100px;
   display: flex;
-  margin: 40px;
-
-}
-
-.grid {
-
-  border: 1px solid black;
-  display: flex;
-  /* i might choose "space-evenly" */
-  justify-content:space-between;
+  /* border: 1px solid black; */
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 20px;
   flex: 1;
-  /* align-items: flex-start; */
+  height: 100vh;
 }
 
-
-
-.item {
-  border: 10px solid green;
-  width: 500px;
-  height: 400px;
-  padding: 1px;
+.column-one, .column-two, .column-three {
+  /* border: 1px solid green; */
   display: flex;
-  margin-bottom: 10px;
-  /* margin-top: auto */
-}
-
-
-
-
-/* box one */
-.one {
-
-  border: 10px solid white;
-  width: 30%;
-  height: 30%;
+  flex:1;
+  flex-direction: column;
   font-family: 'Supermercado One', cursive;
   font-size: x-large;
-  flex-direction: column;
-  /* justify-content: center; */
 
 }
+
+
+
+  .one-row-one {
+  border: 5px solid white;
+  width:auto;
+  height: 35%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+  .one-row-two {
+    border: 5px solid white;
+    width:auto;
+    height: 65%;
+    margin-right: 20px;
+}
+
+  .two-row-one {
+  border: 5px solid white;
+  width:auto;
+  height: 40%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+  .two-row-two {
+    border: 5px solid white;
+    width:auto;
+    height: 60%;
+    margin-right: 20px;
+}
+
+  .three-row-one {
+  border: 5px solid white;
+  width:auto;
+  height: 70%;
+  margin-bottom: 20px;
+
+}
+
+  .three-row-two {
+    border: 5px solid white;
+    width:auto;
+    height: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+/* }
 .one img {
   flex:1;
 }
@@ -154,14 +182,14 @@
     font-size: x-large;
     flex-direction: column;
     border: 10px solid white;
-  }
-    }
+  } */
 
 
 
 
 
-@media only screen and (min-width: 768px) {
+/*
+@media only screen and (min-width: 768px) { */
 /* header */
 /* title */
 /* article */
@@ -169,8 +197,8 @@
 
 /* events */
 
-* {
+/* * {
   display: flex;
 }
 
-}
+} */
