@@ -55,10 +55,24 @@
 
 
   .two-row-two {
-    border: 5px solid white;
     width:auto;
     height: 70%;
     margin-right: 20px;
+    color: #3C3731;
+    background:#F8F3F0 no-repeat fixed;
+}
+
+.two-row-two h4 {
+
+  display: block;
+  font-size: .75em;
+  margin-top: 3em;
+  margin-bottom: .50em;
+  margin-left: 1em;
+  margin-right: 3em;
+  font-weight: bold;
+  color: #3C3731;
+  background:#F8F3F0 no-repeat fixed;
 }
 
 
@@ -94,7 +108,6 @@ img {
 
 
   .three-row-two {
-    border: 5px solid white;
     width:auto;
     height: 30%;
     color: #3C3731;
