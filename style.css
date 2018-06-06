@@ -10,14 +10,17 @@
 }
 
 .container{
-  margin:100px;
+
   display: block;
-  border: 1px solid black;
+    margin:100px;
+  /* border: 1px solid black; */
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1;
-  height: 100vh;
-  width: 100vw;
+  height:auto;
+  weight:100%;
+  /* height: 100vh;
+  width: 100vw; */
 }
 
 .column-one, .column-two, .column-three {
@@ -26,7 +29,8 @@
   flex:1;
   flex-direction: column;
   font-family: 'Supermercado One', cursive;
-  /* font-size: x-large; */
+
+
 
 }
   .one-row-one {
@@ -35,6 +39,28 @@
   height: 35%;
   margin-bottom: 20px;
   margin-right: 20px;
+  color: #3C3731;
+  background:#F8F3F0 no-repeat fixed;
+
+}
+
+.one-row-one h1, .one-row-one h3, .one-row-one p{
+
+  color: #3C3731;
+  background:#F8F3F0 no-repeat fixed;
+  display: block;
+  font-size: 1em;
+  margin-bottom: 2em;
+  margin-left: 5em;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.one-row-one img{
+  display: block;
+  width: 30%;
+  height: 40%;
+
 }
 
   .one-row-two {
@@ -42,15 +68,23 @@
     /* width:auto; */
     height: 65%;
     margin-right: 20px;
+    color: #3C3731;
+    background:#F8F3F0 no-repeat fixed;
 }
 
+.one-row-two h1, img, p{
+  color: #3C3731;
+  background:#F8F3F0 no-repeat fixed;
+
+
+}
 
   .two-row-one {
 
   border: 5px solid white;
   width:auto;
   height: 30%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin-right: 20px;
 }
 
@@ -96,10 +130,10 @@ img {
 
 .three-row-one h1 {
   display: block;
-  font-size: 3em;
+  font-size: 5em;
   margin-top: 1em;
   margin-bottom: 0.67em;
-  margin-left: 0;
+  margin-left: 2em;
   margin-right: 0;
   font-weight: bold;
   color: #F8F3F0;
@@ -146,34 +180,35 @@ img {
 
 /*small phone, iPhone 5 and up */
 
-@media only screen and (min-width: 320px){
+/* @media only screen and (min-width: 320px){ */
+@media only screen and (max-width: 768px){
   .container{
     display: block;
-    margin:10px;
+    margin:.50px;
     width: 100%;
-    /* display: flex;
-    border: 1px solid black;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1; */
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh; */
+    /* width: 100vw; */
+    height:auto;
+
   }
   .column-one{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
-    /* height: 100vh;
-    width: 100vw; */
-    /* flex:1;
-    flex-direction: column;
-    font-family: 'Supermercado One', cursive; */
+
   }
+.one-row-one{
+  height: 35%;
+  margin-bottom: 20px;
+
+}
+
+
   .maximus_face{
-    width: auto;
+    width: 30%;
   }
 
   .column-two{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex:1;
     flex-direction: column;
@@ -182,7 +217,7 @@ img {
     width: 100vw; */
     }
   .column-three{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     display: flex;
     flex:1;
     flex-direction: column;
@@ -194,40 +229,26 @@ img {
 
   @media only screen
 and (min-device-width : 768px)
-/* and (max-device-width : 1024px)
-and (orientation : portrait)
-and (-webkit-min-device-pixel-ratio: 1)  */{
+{
 
     .container{
       display: flex;
-      margin:10px;
-      width: 100%;
-      /* display: flex;
-      border: 1px solid black;
-      flex-direction: row;
-      flex-wrap: wrap;
-      flex: 1; */
-      height: 100vh;
-      width: 100vw;
+      flex:1;
+      margin:50px;
+      height: auto;
+      width: 90%;
     }
   }
 
   @media screen
-  and (min-device-width: 1200px)
-  /* and (max-device-width: 1600px) */
-  /* and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { */
+  and (min-device-width: 1200px){
+
 
     .container{
       display: flex;
-      margin:10px;
-      width: 100%;
-      /* display: flex;
-      border: 1px solid black;
-      flex-direction: row;
-      flex-wrap: wrap;
-      flex: 1; */
-      height: 100vh;
-      width: 100vw;
+      flex:1;
+      margin:50px;
+      width: 90%;
+      height: auto;
     }
     }
